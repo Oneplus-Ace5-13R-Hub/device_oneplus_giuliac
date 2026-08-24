@@ -1,6 +1,9 @@
 # Bluetooth
 bluetooth.device.default_name=OnePlus Ace 5
 
+# Camera
+vendor.camera.aux.packagelist=com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
+
 # Graphics
 debug.sf.auto_latch_unsignaled=1
 ro.surface_flinger.set_display_power_timer_ms=1000
