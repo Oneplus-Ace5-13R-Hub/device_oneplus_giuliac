@@ -11,25 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from giuliac device
 $(call inherit-product, device/oneplus/giuliac/device.mk)
 
-# Disable EPPE
-TARGET_DISABLE_EPPE := true
-
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-WITH_GMS := true
-TARGET_ENABLE_BLUR := true
-EXTRA_UDFPS_ANIMATIONS := true
+# Infinity flags
+INFINITY_MAINTAINER := franlop77
+INFINITY_BUILD_TYPE := OFFICIAL
 TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="franlop77" \
-    RisingChipset="Snapdragon 8 Gen 3"
-
-# rising Maintainer
-RISING_MAINTAINER=franlop77
-
-PRODUCT_NAME := lineage_giuliac
+PRODUCT_NAME := infinity_giuliac
 PRODUCT_DEVICE := giuliac
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
