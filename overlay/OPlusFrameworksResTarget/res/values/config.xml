@@ -29,7 +29,7 @@
          -2 is invalid so setting will resort to int value specified above.
          Set this to 0.0 to allow screen to go to minimal brightness.
          The user is forbidden from setting the brightness below this level. -->
-    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.0059</item>
+    <item type="dimen" name="config_screenBrightnessSettingMinimumFloat">0.006195</item>
 
     <!-- Maximum screen brightness allowed by the power manager.
          -2 is invalid so setting will resort to int value specified above.
@@ -134,13 +134,13 @@
          array. The brightness values must be non-negative and non-decreasing. This must be
          overridden in platform specific overlays -->
     <array name="config_autoBrightnessDisplayValuesNits">
-        <item>5.0</item>    <!--      0 - 6     -->
-        <item>10.0</item>   <!--      6 - 10    -->
-        <item>18.0</item>   <!--     10 - 20    -->
-        <item>28.0</item>   <!--     20 - 30    -->
-        <item>40.0</item>   <!--     30 - 40    -->
-        <item>55.0</item>   <!--     40 - 50    -->
-        <item>70.0</item>   <!--     50 - 60    -->
+        <item>25.0</item>    <!--      0 - 6     -->
+        <item>33.0</item>   <!--      6 - 10    -->
+        <item>41.0</item>   <!--     10 - 20    -->
+        <item>50.0</item>   <!--     20 - 30    -->
+        <item>58.0</item>   <!--     30 - 40    -->
+        <item>66.0</item>   <!--     40 - 50    -->
+        <item>74.0</item>   <!--     50 - 60    -->
         <item>85.0</item>   <!--     60 - 70    -->
         <item>100.0</item>  <!--     70 - 80    -->
         <item>115.0</item>  <!--     80 - 90    -->
