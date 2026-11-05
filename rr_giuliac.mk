@@ -11,16 +11,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from giuliac device
 $(call inherit-product, device/oneplus/giuliac/device.mk)
 
+# Disable EPPE
+TARGET_DISABLE_EPPE := true
+
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
-# Infinity flags
-INFINITY_MAINTAINER := franlop77
-INFINITY_BUILD_TYPE := OFFICIAL
+# Read by vendor/rr before the inherit below.
+TARGET_EXCLUDES_AUDIOFX := true
 TARGET_HAS_UDFPS := true
-WITH_GAPPS := true
+WITH_GMS := true
+WITH_DUCK_RKP := true
+RR_MAINTAINER := franlop77
 
-PRODUCT_NAME := infinity_giuliac
+# envsetup accepts rr_* . Set the codename here as well so the version
+# string is dodge even if lunch was not used.
+LINEAGE_BUILD := giuliac
+
+PRODUCT_NAME := rr_giuliac
 PRODUCT_DEVICE := giuliac
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
