@@ -15,16 +15,15 @@ $(call inherit-product, device/oneplus/giuliac/device.mk)
 TARGET_DISABLE_EPPE := true
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-# RR flags
-TARGET_EXCLUDES_AUDIOFX := true
+# Infinity flags
+INFINITY_MAINTAINER := franlop77
+INFINITY_BUILD_TYPE := OFFICIAL
 TARGET_HAS_UDFPS := true
-WITH_GMS := true
-WITH_DUCK_RKP := true
-RR_MAINTAINER := franlop77
+WITH_GAPPS := true
 
-PRODUCT_NAME := rr_giuliac
+PRODUCT_NAME := infinity_giuliac
 PRODUCT_DEVICE := giuliac
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus

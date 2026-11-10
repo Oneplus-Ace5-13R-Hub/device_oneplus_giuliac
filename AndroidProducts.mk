@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_giuliac.mk
+    $(LOCAL_DIR)/infinity_giuliac.mk
