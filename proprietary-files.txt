@@ -875,7 +875,6 @@ odm/lib64/libFilterWrapper.so
 odm/lib64/libHDRDetection.so
 odm/lib64/libHIS.so
 odm/lib64/libImageWarpMask.so;FIX_SONAME
-odm/lib64/libMNN.so
 odm/lib64/libNamaWrapper.so
 odm/lib64/libODNN.so
 odm/lib64/libOGLManager.so
@@ -1713,6 +1712,7 @@ vendor/etc/oem_51_prj_OppoLTM8650_1689712162019.pfm
 vendor/lib64/libcwb_client_vendor.so
 vendor/lib64/libcwb_qcom_aidl.so
 vendor/lib64/libdtlm.so
+vendor/lib64/vendor.oplus.hardware.displaycolorfeature-V1-ndk.so;MODULE_SUFFIX=_vendor
 
 # Sensors
 vendor/lib64/sensors.qsh.so
