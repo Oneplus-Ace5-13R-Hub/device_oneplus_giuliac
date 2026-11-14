@@ -12,6 +12,32 @@
             <density>510</density>
         </density>
     </densityMapping>
+  <screenBrightnessMap interpolation="linear">
+    <point>
+      <value>0.0000</value>
+      <nits>20.0000</nits>
+    </point>
+    <point>
+      <value>0.0195</value>
+      <nits>30.0000</nits>
+    </point>
+    <point>
+      <value>0.0392</value>
+      <nits>45.0000</nits>
+    </point>
+    <point>
+      <value>0.0587</value>
+      <nits>55.0000</nits>
+    </point>
+    <point>
+      <value>0.0784</value>
+      <nits>65.0000</nits>
+    </point>
+    <point>
+      <value>0.0980</value>
+      <nits>75.0000</nits>
+    </point>
+  </screenBrightnessMap>
 
     <highBrightnessMode enabled="true">
         <transitionPoint>0.85</transitionPoint>
